@@ -17,3 +17,82 @@ export const Wrapper = styled("div", {
   margin: "0 auto",
   paddingTop: 64
 });
+
+export const Emphasis = styled("section", {
+  marginTop: 64,
+
+  display: "flex",
+  gap: 30,
+
+  "& .content": {
+    h1: {
+      fontSize: 36,
+      fontWeight: "bold",
+      color: "$buttonBg"
+    },
+
+    p: {
+      margin: "16px 0 24px",
+      fontSize: 18,
+      fontWeight: "normal",
+      color: "$bodyBg"
+    },
+
+    a: {
+      fontSize: 18,
+      fontWeight: "normal",
+      color: "$buttonBg",
+
+      display: "flex",
+      alignItems: "center",
+      gap: 8,
+
+      "&:hover": {
+        textDecoration: "underline"
+      }
+    }
+  }
+});
+
+export const Main = styled("main", {
+  marginTop: 64,
+
+  "& > div": {
+    marginBottom: 64,
+
+    "& .wrapper": {
+      display: "flex",
+      justifyContent: "space-between",
+      gap: 130,
+
+      "& section": {
+        maxWidth: 560,
+        "& a": {
+          "&:hover": {
+            textDecoration: "underline"
+          }
+        },
+
+        "& h1": {
+          margin: "16px 0",
+          color: "$purpleBg",
+          fontSize: 24,
+          fontWeight: "bold"
+        },
+        "& p": {
+          fontSize: 16,
+          fontWeight: "normal"
+        }
+      }
+    }
+  }
+});
+
+export const Posts = styled("section", {
+  "& .wrapper": {
+    display: "flex",
+    alignItems: "center",
+
+    gap: 30
+  }
+});
