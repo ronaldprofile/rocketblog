@@ -39,16 +39,24 @@ export const Emphasis = styled("section", {
     },
 
     a: {
-      fontSize: 18,
-      fontWeight: "normal",
-      color: "$buttonBg",
+      maxWidth: 200,
+      padding: "12px 0",
 
       display: "flex",
       alignItems: "center",
+      justifyContent: "center",
       gap: 8,
 
+      fontSize: 18,
+      fontWeight: "bold",
+      textTransform: "uppercase",
+      background: "$buttonBg",
+      color: "$white",
+      borderRadius: "9999px",
+
+      transition: ".2s",
       "&:hover": {
-        textDecoration: "underline"
+        filter: "brightness(0.9)"
       }
     }
   }
