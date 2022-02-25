@@ -20,9 +20,28 @@ export const Ul = styled("ul", {
   gap: 32,
 
   "& li a": {
+    position: "relative",
     fontSize: 18,
     fontWeight: "bold",
-    color: theme.colors.white
+    color: "$white",
+    transition: ".2s",
+
+    "&::after": {
+      content: "",
+      position: "absolute",
+      width: 0,
+      height: 4,
+      bottom: -5,
+      left: 0,
+      background: "$white",
+      transition: "width .2s"
+    },
+
+    "&:hover": {
+      "&::after": {
+        width: "100%"
+      }
+    }
   }
 });
 
