@@ -68,6 +68,11 @@ export const SearchArea = styled("div", {
 
     background: "$buttonBg",
     border: 0,
-    borderRadius: "0 4px 4px 0"
+    borderRadius: "0 4px 4px 0",
+    transition: ".2s",
+
+    "&:hover": {
+      filter: "brightness(1.2)"
+    }
   }
 });
