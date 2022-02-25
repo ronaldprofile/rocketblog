@@ -13,6 +13,11 @@ export const GlobalStyles = globalCss({
     height: "100vh"
   },
 
+  ".wrapper": {
+    maxWidth: "1170px",
+    margin: "0 auto"
+  },
+
   button: {
     cursor: "pointer"
   },
