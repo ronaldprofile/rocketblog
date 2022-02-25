@@ -13,6 +13,11 @@ Neste desafio você irá desenvolver uma homepage para um blog.
 - React JS
 - Stitches
 
+## Próximo Nível
+
+- Layout Responsivo (Coming Soon).
+- Animações (Coming Soon).
+
 ## Uso
 
 - Clone o repo com `git clone https://github.com/ronaldprofile/rocketblog`.
