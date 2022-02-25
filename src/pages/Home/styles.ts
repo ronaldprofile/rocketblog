@@ -7,7 +7,8 @@ export const Container = styled("div", {
 export const Background = styled("div", {
   width: "100%",
   height: 587,
-  background: "$purpleBg"
+  background: "$purpleBg",
+  borderBottom: "6px solid $green"
 });
 
 export const Wrapper = styled("div", {
