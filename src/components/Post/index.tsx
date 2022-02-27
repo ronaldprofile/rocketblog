@@ -16,9 +16,10 @@ export function Post({ date, description, title, imageUrl }: IPostProps) {
         <figcaption>{date}</figcaption>
       </figure>
 
-      <Text tag="h1">{title}</Text>
-
-      <Text tag="p">{description}</Text>
+      <div>
+        <Text tag="h1">{title}</Text>
+        <Text tag="p">{description}</Text>
+      </div>
     </Container>
   );
 }

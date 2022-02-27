@@ -1,4 +1,4 @@
-import { globalCss } from "@stitches/react";
+import { globalCss } from ".";
 
 export const GlobalStyles = globalCss({
   "*": {
@@ -15,7 +15,11 @@ export const GlobalStyles = globalCss({
 
   ".wrapper": {
     maxWidth: "1170px",
-    margin: "0 auto"
+    margin: "0 auto",
+
+    "@breakpoint4": {
+      padding: "0 32px"
+    }
   },
 
   button: {

@@ -6,7 +6,6 @@ export const Container = styled("div", {
 
 export const Background = styled("div", {
   width: "100%",
-  height: 587,
   background: "$purpleBg",
   borderBottom: "6px solid $green"
 });
@@ -15,12 +14,16 @@ export const Wrapper = styled("div", {
   maxWidth: "1170px",
   height: "100%",
   margin: "0 auto",
-  paddingTop: 64
+  paddingTop: 64,
+
+  "@tablets": {
+    paddingLeft: 32,
+    paddingRight: 32
+  }
 });
 
 export const Emphasis = styled("section", {
-  marginTop: 64,
-
+  margin: "64px 0 64px",
   display: "flex",
   gap: 30,
 
@@ -59,6 +62,65 @@ export const Emphasis = styled("section", {
         filter: "brightness(0.9)"
       }
     }
+  },
+
+  // 768px
+  "@breakpoint4": {
+    flexDirection: "column",
+
+    "& .content": {
+      order: 2,
+      h1: {
+        fontSize: 30
+      }
+    }
+  },
+
+  // 480px
+  "@breakpoint3": {
+    "& .content": {
+      h1: {
+        fontSize: 24
+      },
+      p: {
+        fontSize: 16
+      },
+
+      a: {
+        padding: "10px 0",
+        fontSize: 16
+      }
+    },
+
+    "& .image-post": {
+      "& img": {
+        width: 400
+      }
+    }
+  },
+
+  // 425px
+  "@breakpoint2": {
+    "& .image-post": {
+      "& img": {
+        width: 300
+      }
+    }
+  },
+
+  // 320px
+  "@breakpoint1": {
+    "& .content": {
+      h1: {
+        fontSize: 20
+      }
+    },
+
+    "& .image-post": {
+      "& img": {
+        width: 250
+      }
+    }
   }
 });
 
@@ -93,6 +155,43 @@ export const Main = styled("main", {
         }
       }
     }
+  },
+
+  "@breakpoint4": {
+    "& > div": {
+      "& .wrapper": {
+        flexDirection: "column",
+        gap: 100
+      }
+    }
+  },
+
+  "@breakpoint3": {
+    "& > div": {
+      "& .wrapper": {
+        "& section": {
+          "& figure img": {
+            width: 300
+          }
+        }
+      }
+    }
+  },
+
+  "@breakpoint1": {
+    "& > div": {
+      "& .wrapper": {
+        "& section": {
+          "& figure img": {
+            width: 250
+          },
+
+          "& h1": {
+            fontSize: 20
+          }
+        }
+      }
+    }
   }
 });
 
@@ -101,6 +200,10 @@ export const Posts = styled("section", {
     display: "flex",
     alignItems: "center",
 
-    gap: 30
+    gap: 30,
+
+    "@breakpoint4": {
+      flexDirection: "column"
+    }
   }
 });

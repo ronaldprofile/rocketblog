@@ -1,4 +1,4 @@
-import { styled, theme } from "../../styles";
+import { styled } from "../../styles";
 
 export const Container = styled("header", {
   width: "100%",
@@ -12,7 +12,11 @@ export const Logo = styled("a", {
   height: 37
 });
 
-export const Navigation = styled("nav");
+export const Navigation = styled("nav", {
+  "@breakpoint4": {
+    display: "none"
+  }
+});
 
 export const Ul = styled("ul", {
   display: "flex",
@@ -93,5 +97,9 @@ export const SearchArea = styled("div", {
     "&:hover": {
       filter: "brightness(1.2)"
     }
+  },
+
+  "@breakpoint4": {
+    display: "none"
   }
 });
