@@ -16,7 +16,7 @@ export const Wrapper = styled("div", {
   margin: "0 auto",
   paddingTop: 64,
 
-  "@tablets": {
+  "@breakpoint4": {
     paddingLeft: 32,
     paddingRight: 32
   }
