@@ -12,43 +12,6 @@ export const Logo = styled("a", {
   height: 37
 });
 
-export const Navigation = styled("nav", {
-  "@breakpoint4": {
-    display: "none"
-  }
-});
-
-export const Ul = styled("ul", {
-  display: "flex",
-  alignItems: "center",
-  gap: 32,
-
-  "& li a": {
-    position: "relative",
-    fontSize: 18,
-    fontWeight: "bold",
-    color: "$white",
-    transition: ".2s",
-
-    "&::after": {
-      content: "",
-      position: "absolute",
-      width: 0,
-      height: 4,
-      bottom: -5,
-      left: 0,
-      background: "$white",
-      transition: "width .2s"
-    },
-
-    "&:hover": {
-      "&::after": {
-        width: "100%"
-      }
-    }
-  }
-});
-
 export const SearchArea = styled("div", {
   height: "100%",
 
@@ -101,5 +64,76 @@ export const SearchArea = styled("div", {
 
   "@breakpoint4": {
     display: "none"
+  }
+});
+
+export const ActionsMenu = styled("div", {
+  display: "none",
+
+  button: {
+    padding: "8px 16px",
+    background: "none",
+    border: 0,
+
+    svg: {
+      width: 25,
+      height: 25,
+      color: "$white"
+    }
+  },
+
+  variants: {
+    modalActive: {
+      true: {
+        "& .button-hamburger": {
+          display: "none"
+        },
+
+        "& .button-cross": {
+          display: "block"
+        },
+
+        "& nav ul": {
+          height: "calc(100vh - 120px)",
+          visibility: "visible",
+          overflowY: "auto"
+        }
+      }
+    }
+  },
+
+  "@breakpoint4": {
+    width: "100%",
+    display: "flex",
+    justifyContent: "flex-end",
+
+    "& .button-cross": {
+      display: "none"
+    }
+  }
+});
+
+export const MenuMobile = styled("div", {
+  nav: {
+    display: "block",
+
+    ul: {
+      display: "block",
+      position: "absolute",
+      top: 120,
+      right: 0,
+      width: "100%",
+      height: 0,
+      background: "$purpleBg",
+      transition: "0.6s",
+      zIndex: 9999,
+      visibility: "hidden",
+      overflowY: "hidden",
+
+      li: {
+        padding: "16px 32px 5px",
+        borderBottom: "1px solid #29292e"
+      }
+    }
   }
 });
