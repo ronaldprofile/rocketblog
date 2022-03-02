@@ -15,7 +15,7 @@ Neste desafio você irá desenvolver uma homepage para um blog.
 
 ## Próximo Nível
 
-- Layout Responsivo (Coming Soon).
+- Layout Responsivo ✅.
 - Animações (Coming Soon).
 
 ## Uso
