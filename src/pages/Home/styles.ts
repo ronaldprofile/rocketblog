@@ -6,6 +6,7 @@ export const Container = styled("div", {
 
 export const Background = styled("div", {
   width: "100%",
+  height: "100%",
   background: "$purpleBg",
   borderBottom: "6px solid $green"
 });
@@ -23,8 +24,9 @@ export const Wrapper = styled("div", {
 });
 
 export const Emphasis = styled("section", {
-  margin: "64px 0 64px",
+  height: "100%",
   display: "flex",
+  alignItems: "center",
   gap: 30,
 
   "& .content": {
@@ -66,7 +68,10 @@ export const Emphasis = styled("section", {
 
   // 768px
   "@breakpoint4": {
+    margin: "64px 0 64px",
+
     flexDirection: "column",
+    alignItems: "flex-start",
 
     "& .content": {
       order: 2,
