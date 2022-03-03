@@ -194,16 +194,3 @@ export const Main = styled("main", {
     }
   }
 });
-
-export const Posts = styled("section", {
-  "& .wrapper": {
-    display: "flex",
-    alignItems: "center",
-
-    gap: 30,
-
-    "@breakpoint4": {
-      flexDirection: "column"
-    }
-  }
-});

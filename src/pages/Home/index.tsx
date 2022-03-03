@@ -1,7 +1,7 @@
 import { Text } from "../../components/Text";
 import { Header } from "../../components/Header";
 import { Article } from "../../components/Article";
-import { Post } from "../../components/Post";
+import { Posts } from "../../components/Posts";
 
 import * as I from "../../images";
 import * as H from "./styles";
@@ -65,45 +65,24 @@ export function Home() {
               <Article
                 date="Janeiro 04, 2022"
                 title="Conheça as principais técnicas para conseguir uma vaga
-                internacional em programação"
+                  internacional em programação"
                 description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh
-                nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean
-                sit vitae, sed tristique."
+                  nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean
+                  sit vitae, sed tristique."
               />
               <Article
                 date="Janeiro 04, 2022"
                 title="Conheça as principais técnicas para conseguir uma vaga
-                internacional em programação"
+                  internacional em programação"
                 description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh
-                nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean
-                sit vitae, sed tristique."
+                  nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean
+                  sit vitae, sed tristique."
               />
             </aside>
           </div>
         </div>
 
-        <H.Posts>
-          <div className="wrapper">
-            <Post
-              date="Janeiro 04, 2022"
-              title="10 dicas para conseguir a vaga desejada"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique. "
-              imageUrl={I.post2}
-            />
-            <Post
-              date="Janeiro 04, 2022"
-              title="Deixe seu código mais semântico com essas dicas"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique. "
-              imageUrl={I.post3}
-            />
-            <Post
-              date="Janeiro 04, 2022"
-              title="Use essas dicas nas suas aplicações mobile"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique. "
-              imageUrl={I.post4}
-            />
-          </div>
-        </H.Posts>
+        <Posts />
       </H.Main>
     </H.Container>
   );
