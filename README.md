@@ -12,11 +12,12 @@ Neste desafio você irá desenvolver uma homepage para um blog.
 
 - React JS
 - Stitches
+- Framer Motion
 
 ## Próximo Nível
 
 - Layout Responsivo ✅.
-- Animações (Coming Soon).
+- Animações ✅.
 
 ## Uso
 
