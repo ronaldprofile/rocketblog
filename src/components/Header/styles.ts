@@ -15,50 +15,57 @@ export const Logo = styled("a", {
 export const SearchArea = styled("div", {
   height: "100%",
 
-  "& form": {
+  form: {
     display: "flex",
-    alignItems: "center"
-  },
+    alignItems: "center",
 
-  "& input": {
-    height: "100%",
-    padding: "14px 25px",
-    border: 0,
+    label: {
+      position: "absolute",
+      width: 1,
+      height: 1,
+      padding: 0,
+      margin: -1,
+      overflow: "hidden",
+      clip: "rect(0, 0, 0, 0)",
+      whiteSpace: "nowrap",
+      borderWidth: 0
+    },
 
-    fontSize: 14,
-    background: "$darkBg",
-    color: "$white",
+    input: {
+      height: "100%",
+      padding: "14px 25px",
+      border: "1px solid $darkBg",
+      borderRight: 0,
 
-    borderRadius: "4px 0 0 4px",
+      fontSize: 14,
+      background: "$darkBg",
+      color: "$white",
 
-    "&::placeholder": {
-      color: "$white"
-    }
-  },
+      outline: "none",
+      borderRadius: "4px 0 0 4px",
+      transition: ".2s",
+      "&::placeholder": {
+        color: "$white"
+      },
 
-  "& label": {
-    position: "absolute",
-    width: 1,
-    height: 1,
-    padding: 0,
-    margin: -1,
-    overflow: "hidden",
-    clip: "rect(0, 0, 0, 0)",
-    whiteSpace: "nowrap",
-    borderWidth: 0
-  },
+      "&:focus": {
+        borderColor: "$buttonBg"
+      }
+    },
 
-  "& button": {
-    height: "100%",
-    padding: "10px 23px",
+    button: {
+      height: "100%",
+      padding: "10px 23px",
 
-    background: "$buttonBg",
-    border: 0,
-    borderRadius: "0 4px 4px 0",
-    transition: ".2s",
+      background: "$buttonBg",
+      border: "1px solid $buttonBg",
 
-    "&:hover": {
-      filter: "brightness(1.2)"
+      borderRadius: "0 4px 4px 0",
+      transition: ".2s",
+
+      "&:hover": {
+        filter: "brightness(1.2)"
+      }
     }
   },
 
