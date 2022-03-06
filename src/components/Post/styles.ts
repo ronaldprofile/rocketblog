@@ -1,26 +1,50 @@
 import { styled } from "../../styles";
 
 export const Container = styled("article", {
+  position: "relative",
   display: "flex",
   flexDirection: "column",
   gap: 8,
 
-  "& h1": {
+  "&::after": {
+    content: "",
+    position: "absolute",
+    bottom: -8,
+    left: 0,
+    height: 2,
+    width: 0,
+    background: "$purpleBg",
+    transition: "width .2s"
+  },
+
+  "&:hover": {
+    "&::after": {
+      width: "100%"
+    }
+  },
+
+  h1: {
     fontSize: 26,
     fontWeight: "bold",
     color: "$darkBg"
+  },
+
+  a: {
+    "&:hover": {
+      textDecoration: "underline"
+    }
   },
 
   "@breakpoint4": {
     flexDirection: "row",
     gap: 48,
 
-    "& figure": {
-      "& img": {
+    figure: {
+      img: {
         width: 300
       },
 
-      "& figcaption": {
+      figcaption: {
         position: "absolute",
         width: 1,
         height: 1,
@@ -38,19 +62,19 @@ export const Container = styled("article", {
     flexDirection: "column",
     gap: 8,
 
-    "& h1": {
+    h1: {
       fontSize: 22
     }
   },
 
   "@breakpoint1": {
-    "& figure": {
-      "& img": {
+    figure: {
+      img: {
         width: 250
       }
     },
 
-    "& h1": {
+    h1: {
       fontSize: 20
     }
   }

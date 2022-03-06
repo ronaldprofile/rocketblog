@@ -17,7 +17,9 @@ export function Post({ date, description, title, imageUrl }: IPostProps) {
       </figure>
 
       <div>
-        <Text tag="h1">{title}</Text>
+        <a href="#" title="Ver post">
+          <Text tag="h1">{title}</Text>
+        </a>
         <Text tag="p">{description}</Text>
       </div>
     </Container>
